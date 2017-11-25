@@ -1,0 +1,40 @@
+{
+  "name": "sn-trello",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.0.0",
+    "apollo-client": "^2.0.1",
+    "apollo-link-http": "^1.0.0",
+    "apollo-link-ws": "^1.0.0",
+    "apollo-utilities": "^1.0.1",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "immutability-helper": "^2.4.0",
+    "lodash.find": "^4.6.0",
+    "lodash.findindex": "^4.6.0",
+    "lodash.get": "^4.4.2",
+    "material-ui": "^1.0.0-beta.18",
+    "react": "^16.0.0",
+    "react-apollo": "^2.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "rebass": "^1.0.4",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.75.1",
+    "styled-components": "^2.2.3",
+    "subscriptions-transport-ws": "^0.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "custom-react-scripts": "^0.2.1"
+  }
+}
