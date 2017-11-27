@@ -26,11 +26,6 @@ export const subscriptionLink = (config = {}) =>
 
 export const queryOrMutationLink = (config = {}) =>
   new ApolloLink((operation, forward) => {
-    /*
-     You can use a simple middleware link like this one to set credentials,
-     headers, or whatever else you need on the context.
-     All links in the chain will have access to the context.
-     */
     operation.setContext({
       credentials: 'same-origin',
     });
