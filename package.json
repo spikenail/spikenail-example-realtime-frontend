@@ -5,6 +5,8 @@
   "dependencies": {
     "apollo-cache-inmemory": "^1.0.0",
     "apollo-client": "^2.0.1",
+    "apollo-link": "^1.0.3",
+    "apollo-link-error": "^1.0.1",
     "apollo-link-http": "^1.0.0",
     "apollo-link-ws": "^1.0.0",
     "apollo-utilities": "^1.0.1",
@@ -20,6 +22,7 @@
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
+    "react-select": "^1.0.1",
     "rebass": "^1.0.4",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.75.1",
