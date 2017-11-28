@@ -28,12 +28,15 @@ export const queryOrMutationLink = (config = {}) =>
   new ApolloLink((operation, forward) => {
     operation.setContext({
       credentials: 'same-origin',
+      headers: {
+        authorization: `Bearer ${localStorage.getItem('auth_token')}`
+      }
     });
 
     return forward(operation);
   }).concat(
     new HttpLink({
-      uri: 'http://localhost:5000/graphql?auth_token=igor-secret-token',
+      uri: 'http://localhost:5000/graphql',
       ...config,
     })
   );
